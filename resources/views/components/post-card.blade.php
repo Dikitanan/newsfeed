@@ -6,7 +6,7 @@
             'id' => $post->id,
             'body' => $post->body,
             'media' => $post->media,
-            'media_url' => $post->media ? asset('storage/' . $post->media) : null,
+            'media_url' => $post->media ? asset($post->media) : null,
             'user' => [
                 'name' => $post->user->name
             ],
