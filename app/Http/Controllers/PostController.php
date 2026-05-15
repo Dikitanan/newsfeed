@@ -29,9 +29,15 @@ class PostController extends Controller
         // Handle Media Upload
         if ($request->hasFile('media')) {
 
-            $path = $request->file('media')->store('posts', 'public');
+            $file = $request->file('media');
 
-            $post->media = $path;
+            $filename = time() . '_' . $file->getClientOriginalName();
+
+            // Move directly into public/uploads/posts
+            $file->move(public_path('uploads/posts'), $filename);
+
+            // Save path to DB
+            $post->media = 'uploads/posts/' . $filename;
         }
 
         $post->save();

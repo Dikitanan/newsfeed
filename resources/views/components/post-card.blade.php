@@ -88,11 +88,11 @@
                         playsinline 
                         preload="metadata"
                     >
-                        <source src="{{ asset('storage/' . $post->media) }}" type="{{ $mimeType }}">
+                        <source src="{{ asset($post->media) }}" type="{{ $mimeType }}">
                         Your browser does not support the video tag.
                     </video>
                 @else
-                    <img src="{{ asset('storage/' . $post->media) }}"
+                    <img src="{{ asset($post->media) }}"
                         class="w-full h-auto block object-contain max-h-[600px]"
                         alt="Post image">
                 @endif
