@@ -121,8 +121,7 @@
 
                         <!-- COMMENT BUBBLE -->
                         <div
-                            class="bg-gray-100 rounded-2xl px-4 py-3 inline-block w-fit min-w-[150px] shadow-sm"
-                        >
+                            class="bg-gray-100 rounded-2xl px-4 py-4 inline-block min-w-[220px] min-h-[70px] shadow-sm">
 
                             <div class="text-xs font-semibold text-gray-500 mb-1">
                                 <span x-text="comment.user.name"></span>
