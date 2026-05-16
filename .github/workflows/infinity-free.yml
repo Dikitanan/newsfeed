@@ -1,4 +1,4 @@
-name: Deploy to restaurantjmdiki.wuaze.com
+name: Deploy to restaurantjm.kesug.com
 
 # Run manually or on push to the main branch
 on:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to restaurantjmdiki.wuaze.com
+    name: Deploy to restaurantjm.kesug.com
     runs-on: ubuntu-latest
 
     steps:
